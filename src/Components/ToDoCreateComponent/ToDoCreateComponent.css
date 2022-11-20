@@ -1,0 +1,65 @@
+.new-task-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--color-3);
+    box-shadow: 0px 3px 12px rgb(0 0 0 / 43%);
+    border-radius: 12px;
+    width: 30%;
+    height: 100%;
+    padding: 33px;
+}
+
+.new-task-section h1 {
+    margin: -15px 0px 33px 0px;
+    font-size: 3.33rem;
+    text-shadow: 0px 0px 3px #000000b5;
+}
+
+.new-task-section span {
+    font-weight: 300;
+    letter-spacing: 3px;
+}
+
+.task-name-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.task-name-form label {
+    font-weight: 300;
+    font-family: var(--font-2);
+}
+
+.task-name-form .task-input {
+    border: none;
+    padding: 6px 3px;
+    width: calc(100% - 11px);
+    border-radius: 12px;
+    font-family: var(--font-2);
+    font-size: 18px;
+    text-align: center;
+    margin: 6px 0px 15px 0px;
+    outline: none;
+}
+
+button.btn-primary {
+    cursor: pointer;
+    padding: 6px 18px;
+    font-size: 21px;
+    background-color: var(--color-4);
+    color: var(--color-1);
+    border-radius: 6px;
+    border: 1px solid #ffffff45;
+    box-shadow: 0px 0px 3px #0000008f;
+    font-family: var(--font-2);
+    margin: 21px 0px;
+    transition: all 0.3s linear;
+}
+
+button.btn-primary:hover {
+    background-color: var(--color-4-light);
+    box-shadow: 0px 0px 15px #0000008f;
+}

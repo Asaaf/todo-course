@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-1);
+    color: var(--color-1);
+}
+
+:root {
+    --color-1: #EFF5F5;
+    --color-2: #D6E4E5;
+    --color-3: #497174e8;
+    --color-4: #EB6440;
+
+    --color-1-light: #ffffff;
+    --color-2-light: #e6f2f3;
+    --color-3-light: #649497e8;
+    --color-4-light: #fc7d5a;
+
+    --font-1: 'Poppins', sans-serif;
+    --font-2: 'Mulish', sans-serif;
+}

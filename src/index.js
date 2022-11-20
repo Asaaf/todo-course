@@ -1,9 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+import App from './Components/AppComponent/App';
+import { BackgroundComponent } from './Components/BackgroundComponent/BackgroundComponent';
 import './index.css';
-import App from './Components/App/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-    <App />
+    <React.Fragment>
+        <App />
+        <BackgroundComponent />
+    </React.Fragment>
 );
