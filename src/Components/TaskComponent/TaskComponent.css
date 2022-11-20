@@ -1,0 +1,84 @@
+.task-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 6px;
+    border-radius: 6px;
+    background: var(--color-2);
+    border: 1px solid var(--color-2);
+    padding: 15px;
+    cursor: pointer;
+    transition: all 0.3s linear;
+}
+
+.task-container:hover {
+    background: var(--color-2-light);
+}
+
+h1.task-title {
+    margin: 0;
+    font-size: 21px;
+}
+
+.check-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    cursor: pointer;
+    font-size: 22px;
+    user-select: none;
+    width: 25px;
+    height: 25px;
+}
+
+.check-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: var(--color-3);
+    transition: all 0.3s linear;
+}
+
+.check-container:hover input~.checkmark {
+    background-color: var(--color-3-light);
+}
+
+.check-container input:checked~.checkmark {
+    border-radius: 50%;
+    background-color: var(--color-4);
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.check-container input:checked~.checkmark:after {
+    display: block;
+}
+
+.check-container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
