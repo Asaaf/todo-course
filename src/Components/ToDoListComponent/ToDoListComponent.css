@@ -1,0 +1,28 @@
+.task-list-components {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: calc(100% - 66px);
+    padding: 33px;
+    flex: 1 1 1px;
+    overflow-y: auto;
+}
+
+.task-list-components::-webkit-scrollbar {
+    width: 12px;
+    border-radius: 12px;
+}
+
+.task-list-components::-webkit-scrollbar-track {
+    background: var(--color-2);
+    border-radius: 12px;
+}
+
+.task-list-components::-webkit-scrollbar-thumb {
+    background: var(--color-3);
+    border-radius: 12px;
+    transition: all 0.3s linear;
+}
+.task-list-components::-webkit-scrollbar-thumb:hover {
+    background: var(--color-3-light);
+}
