@@ -1,6 +1,6 @@
-import './ToDoSearchComponent.css';
+import './TaskSearchComponent.css';
 
-function ToDoSearchComponent() {
+function TaskSearchComponent() {
     return (
         <div className='search-container'>
             <div className='title-section'>
@@ -19,4 +19,4 @@ function ToDoSearchComponent() {
     );
 }
 
-export { ToDoSearchComponent };
+export { TaskSearchComponent };

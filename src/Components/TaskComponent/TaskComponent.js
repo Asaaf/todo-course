@@ -1,12 +1,13 @@
 import "./TaskComponent.css";
 
-function TaskComponent(inputs) {
+function TaskComponent(task) {
     return (
         <div className="task-container">
             <div className="description-area">
-                <h1 className="task-title">{inputs.name}</h1>
+                <h1 className="task-title">{task.name}</h1>
+                <div className={`status ${task.status}`}>{task.status == 'unfilled'? 'Sin completar': task.status == 'in-progress'?'En progreso': task.status=='completed'?'Completada':''}</div>
                 <div className="task-description">
-                    {inputs.description}
+                    {task.description}
                 </div>
             </div>
             <label className="check-container">

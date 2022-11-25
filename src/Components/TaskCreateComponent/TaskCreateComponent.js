@@ -1,7 +1,7 @@
-import './ToDoCreateComponent.css';
+import './TaskCreateComponent.css';
 
 
-function ToDoCreateComponent() {
+function TaskCreateComponent() {
     return (
         <div className="new-task-section">
             <span>Crear una nueva</span>
@@ -15,4 +15,4 @@ function ToDoCreateComponent() {
     );
 }
 
-export { ToDoCreateComponent };
+export { TaskCreateComponent };
