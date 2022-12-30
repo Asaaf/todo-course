@@ -1,6 +1,10 @@
 import './TaskSearchComponent.css';
 
 function TaskSearchComponent() {
+    const detectChanges = (change) => {
+        console.log(change.target.value);
+    };
+
     return (
         <div className='search-container'>
             <div className='title-section'>
@@ -8,7 +12,7 @@ function TaskSearchComponent() {
                 <span>De tareas</span>
             </div>
             <div className='search-section'>
-                <input type="text" name='search' id='search' className='search' placeholder='Buscar...' />
+                <input type="text" name='search' id='search' className='search' placeholder='Buscar...' onChange={detectChanges } />
                 <button className='btn-search'>
                     <span className="material-symbols-outlined">
                         search
