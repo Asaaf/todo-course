@@ -57,7 +57,6 @@ h1.task-title {
 }
 
 .check-container input:checked~.checkmark {
-    border-radius: 50%;
     background-color: var(--color-4);
 }
 
@@ -81,4 +80,36 @@ h1.task-title {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
+}
+
+p.text-block {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 360px;
+}
+
+.title-area {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.status.unfilled {
+    margin: 0px 12px;
+    color: var(--color-4);
+}
+
+.status.completed {
+    margin: 0px 12px;
+    color: var(--color-3);
+}
+
+.description-area {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
 }
