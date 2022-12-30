@@ -4,10 +4,14 @@ function TaskComponent(task) {
     return (
         <div className="task-container">
             <div className="description-area">
-                <h1 className="task-title">{task.name}</h1>
-                <div className={`status ${task.status}`}>{task.status == 'unfilled'? 'Sin completar': task.status == 'in-progress'?'En progreso': task.status=='completed'?'Completada':''}</div>
+                <div className="title-area">
+                    <h1 className="task-title">{task.name}</h1>
+                    <div className={`status ${task.status}`}>
+                        {task.status == 'unfilled' ? 'Sin completar' : task.status == 'in-progress' ? 'En progreso' : task.status == 'completed' ? 'Completada' : ''}
+                    </div>
+                </div>
                 <div className="task-description">
-                    {task.description}
+                    <p className="text-block">{task.description}</p>
                 </div>
             </div>
             <label className="check-container">
