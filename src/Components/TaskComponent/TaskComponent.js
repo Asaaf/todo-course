@@ -1,6 +1,11 @@
 import "./TaskComponent.css";
 
 function TaskComponent(task) {
+    const onComplete = (status, task)=>{
+        if(!status){
+            alert(`Tarea "${task}" completada`);
+        }
+    }
     return (
         <div className="task-container">
             <div className="description-area">
@@ -15,8 +20,8 @@ function TaskComponent(task) {
                 </div>
             </div>
             <label className="check-container">
-                <input type="checkbox" />
-                <span className="checkmark"></span>
+                <input type="checkbox"/>
+                <span className="checkmark" onClick={() => onComplete(false,task.name)}></span>
             </label>
         </div>
     );
