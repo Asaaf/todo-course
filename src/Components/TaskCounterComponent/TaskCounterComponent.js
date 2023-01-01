@@ -1,8 +1,8 @@
 import './TaskCounterComponent.css';
 
-function TaskCounterComponent() {
+function TaskCounterComponent({completedTask, totalTask}) {
     return (
-        <div className='task-counter'>Haz completado 0 de 10 tareas</div>
+        <div className='task-counter'>Haz completado {completedTask} de {totalTask} tareas</div>
     );
 };
 
