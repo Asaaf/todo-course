@@ -1,15 +1,14 @@
 import React from 'react';
 import './TaskSearchComponent.css';
 
-function TaskSearchComponent() {
-    const [searchValue, setSearchValue] = React.useState();
+function TaskSearchComponent({searchValue, setSearchValue}) {
 
     const detectChanges = (change) => {
         console.log(change.target.value);
         setSearchValue(change.target.value);
     };
 
-    return [
+    return (
         <div className='search-container'>
             <div className='title-section'>
                 <h1>Lista</h1>
@@ -24,7 +23,7 @@ function TaskSearchComponent() {
                 </button>
             </div>
         </div>
-    ];
+    );
 }
 
 export { TaskSearchComponent };
