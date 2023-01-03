@@ -32,6 +32,7 @@ h1.task-title {
     user-select: none;
     width: 25px;
     height: 25px;
+    margin-right: 6px;
 }
 
 .check-container input {
@@ -50,6 +51,10 @@ h1.task-title {
     width: 25px;
     background-color: var(--color-3);
     transition: all 0.3s linear;
+}
+
+.checkmark.delete{
+    background-color: var(--color-4);
 }
 
 .check-container:hover input~.checkmark {
@@ -97,9 +102,14 @@ p.text-block {
     justify-content: flex-start;
 }
 
-.status.unfilled {
+.status.unfilled,
+.status.in-progress {
     margin: 0px 12px;
     color: var(--color-4);
+}
+
+.status.in-progress{
+    color: var(--color-5);
 }
 
 .status.completed {
@@ -112,4 +122,19 @@ p.text-block {
     display: flex;
     flex-direction: column;
     width: 100px;
+}
+
+.actions {
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: flex-start;
+}
+
+.action {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 3px 0px;
+    align-items: center;
 }

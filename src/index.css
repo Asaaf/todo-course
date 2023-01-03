@@ -14,11 +14,13 @@ body {
     --color-2: #D6E4E5;
     --color-3: #497174e8;
     --color-4: #EB6440;
+    --color-5: #474646;
 
     --color-1-light: #ffffff;
     --color-2-light: #e6f2f3;
     --color-3-light: #649497e8;
     --color-4-light: #fc7d5a;
+    --color-5-light: #7c7a7a;
 
     --font-1: 'Poppins', sans-serif;
     --font-2: 'Mulish', sans-serif;
