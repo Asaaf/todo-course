@@ -1,7 +1,7 @@
 import './BackgroundComponent.css';
 import backgroundImage from '../../assets/images/background-01.jpg';
 
-function BackgroundComponent() {
+function BackgroundView() {
     return (
         <div className='background-container'>
             <img src={backgroundImage} alt="Background" />
@@ -9,4 +9,4 @@ function BackgroundComponent() {
     );
 }
 
-export { BackgroundComponent };
+export { BackgroundView };
