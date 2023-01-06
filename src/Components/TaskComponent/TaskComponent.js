@@ -7,7 +7,7 @@ function TaskComponent(task) {
                 <div className="title-area">
                     <h1 className="task-title">{task.name}</h1>
                     <div className={`status ${task.status}`}>
-                        {task.status == 'unfilled' ? 'Sin completar' : task.status == 'in-progress' ? 'En progreso' : task.status == 'completed' ? 'Completada' : ''}
+                        {task.status === 'unfilled' ? 'Sin completar' : task.status === 'in-progress' ? 'En progreso' : task.status === 'completed' ? 'Completada' : ''}
                     </div>
                 </div>
                 <div className="task-description">

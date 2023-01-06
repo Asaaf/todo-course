@@ -5,16 +5,16 @@ import { TaskComponent } from "../TaskComponent/TaskComponent";
 function TaskListComponent({ taskList, setTask }) {
 
     const setTaskStatus = (id, status) => {
-        const index = taskList.findIndex(task => task.id == id);
+        const index = taskList.findIndex(task => task.id === id);
         const newList = [...taskList];
         newList[index].status = status;
         setTask(newList);
     }
 
     const deleteTask = (id) => {
-        const index = taskList.findIndex(task => task.id == id);
+        const index = taskList.findIndex(task => task.id === id);
         const newList = [...taskList];
-        taskList.splice(index, 1);
+        newList.splice(index, 1);
         setTask(newList);
     }
 
