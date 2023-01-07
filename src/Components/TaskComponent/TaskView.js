@@ -1,6 +1,6 @@
-import "./TaskComponent.css";
+import "./TaskView.css";
 
-function TaskComponent(task) {
+function TaskView({task}) {
     return (
         <div className="task-container">
             <div className="description-area">
@@ -41,4 +41,4 @@ function TaskComponent(task) {
     );
 }
 
-export { TaskComponent };
+export { TaskView };
