@@ -1,4 +1,4 @@
-import './BackgroundComponent.css';
+import './BackgroundView.css';
 import backgroundImage from '../../assets/images/background-01.jpg';
 
 function BackgroundView() {

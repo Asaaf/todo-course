@@ -1,19 +1,19 @@
-import './App.css';
+import './AppView.css';
 import React from 'react';
-import { TaskCreateComponent } from '../TaskCreateComponent/TaskCreateComponent';
-import { TaskListComponent } from '../TaskListComponent/TaskListComponent';
-import { TaskSearchComponent } from '../TaskSearchComponent/TaskSearchComponent';
-import { TaskCounterComponent } from '../TaskCounterComponent/TaskCounterComponent';
+import { TaskCreateController } from '../TaskCreateComponent/TaskCreateController';
+import { TaskListController } from '../TaskListComponent/TaskListController';
+import { TaskSearchController } from '../TaskSearchComponent/TaskSearchController';
+import { TaskCounterController} from '../TaskCounterComponent/TaskCounterController';
 
 
 function AppView({ searchValue, setSearchValue, completedTask, totalTask, taskList, setTask }) {
   return (
     <div className='todo-container'>
-      <TaskCreateComponent />
+      <TaskCreateController />
       <div className='todo-list-section'>
-        <TaskSearchComponent searchValue={searchValue} setSearchValue={setSearchValue} />
-        <TaskCounterComponent completedTask={completedTask} totalTask={totalTask} />
-        <TaskListComponent taskList={taskList} setTask={setTask} />
+        <TaskSearchController searchValue={searchValue} setSearchValue={setSearchValue} />
+        <TaskCounterController completedTask={completedTask} totalTask={totalTask} />
+        <TaskListController taskList={taskList} setTask={setTask} />
       </div>
     </div>
   );

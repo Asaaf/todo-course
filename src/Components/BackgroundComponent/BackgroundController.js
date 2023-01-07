@@ -1,4 +1,3 @@
-import './BackgroundComponent.css';
 import {BackgroundView} from './BackgroundView.js';
 
 function BackgroundController() {

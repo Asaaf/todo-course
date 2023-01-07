@@ -1,12 +1,7 @@
 import React from 'react';
-import './TaskSearchComponent.css';
+import './TaskSearchView.css';
 
-function TaskSearchComponent({searchValue, setSearchValue}) {
-
-    const detectChanges = (change) => {
-        console.log(change.target.value);
-        setSearchValue(change.target.value);
-    };
+function TaskSearchView({detectChanges, searchValue}) {
 
     return (
         <div className='search-container'>
@@ -26,4 +21,4 @@ function TaskSearchComponent({searchValue, setSearchValue}) {
     );
 }
 
-export { TaskSearchComponent };
+export { TaskSearchView };
